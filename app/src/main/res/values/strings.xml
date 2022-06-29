@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FRent</string>
+    <string name="uname">Username</string>
+    <string name="pass">Password</string>
+    <string name="nama">Nama</string>
+    <string name="telp">No telepon</string>
+</resources>

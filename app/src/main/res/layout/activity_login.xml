@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c1">
+    <!--
+    /*
+     *	This content is generated from the API File Info.
+     *	(Alt+Shift+Ctrl+I).
+     *
+     *	@desc
+     *	@file 		frent
+     *	@date 		1653744743392
+     *	@title 		Page 1
+     *	@author
+     *	@keywords
+     *	@generator 	Export Kit v1.3.figma
+     *
+     */
+    -->
+
+    <View
+        android:id="@+id/lapangan1_1_ek1"
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/c3" />
+
+    <View
+        android:id="@+id/rectangle_2_ek1"
+        android:layout_width="303dp"
+        android:layout_height="414dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/rectangle" />
+
+    <ImageView
+        android:id="@+id/logo1_2_ek1"
+        android:layout_width="65dp"
+        android:layout_height="87dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="182dp"
+        android:contentDescription="logo1_2_ek1"
+        android:src="@drawable/logo1" />
+
+    <TextView
+        android:id="@+id/login_ek3"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal|center"
+        android:layout_marginTop="277dp"
+        android:gravity="center"
+        android:text="Futsal Rent Login"
+        android:textColor="@color/c4"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/line_1"
+        android:layout_width="107dp"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="309dp"
+        android:background="@drawable/line" />
+
+    <View
+        android:id="@+id/rectangle_3_ek1"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="337dp"
+        android:background="@drawable/rectangle_3" />
+
+
+    <View
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="383dp"
+        android:background="@drawable/rectangle_3" />
+
+    <EditText
+        android:id="@+id/editUname"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:layout_toRightOf="@id/username_1"
+        android:hint="username"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="89dp"
+        android:layout_height="23dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="494dp"
+        android:background="@drawable/button_styles"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:textColor="@color/white"
+        android:text="Login"
+        android:textSize="9sp" />
+
+
+    <EditText
+        android:id="@+id/editPass"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="384dp"
+        android:layout_toRightOf="@id/password_1"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/username_1"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="348dp"
+        android:contentDescription="username_1"
+        android:src="@drawable/username_1" />
+
+    <ImageView
+        android:id="@+id/password_1"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="395dp"
+        android:contentDescription="password_1"
+        android:src="@drawable/password_1" />
+
+
+
+    <TextView
+        android:id="@+id/belum_punya_akun_"
+        android:layout_width="147dp"
+        android:layout_height="25.5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="625dp"
+        android:gravity="center"
+        android:text="belum punya akun?"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/btnDaftar"
+        android:layout_width="89dp"
+        android:layout_height="23dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="650dp"
+        android:background="@drawable/button_styles"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:text="Daftar"
+        android:textColor="@color/c4"
+        android:theme="@style/buttonstyle1"
+        android:textSize="9sp"/>
+
+</RelativeLayout>
+

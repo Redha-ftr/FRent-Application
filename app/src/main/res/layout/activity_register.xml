@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@color/c1">
+
+    <RelativeLayout
+        android:id="@+id/content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <View
+            android:id="@+id/lapangan1_1_ek2"
+            android:layout_width="match_parent"
+            android:layout_height="196dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/c3" />
+
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="107dp"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="284dp"
+            android:background="@drawable/line" />
+
+
+        <View
+            android:id="@+id/rectangle_8_ek1"
+            android:layout_width="303dp"
+            android:layout_height="537dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/rectangle" />
+
+        <View
+            android:id="@+id/rectangle_4_ek1"
+            android:layout_width="290dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="464dp"
+            android:background="@drawable/rectangle_3" />
+
+        <EditText
+            android:id="@+id/editPass2"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="464dp"
+            android:layout_toRightOf="@id/alamat_1"
+            android:hint="konfirmasi password"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/password_1_ek1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="475dp"
+            android:contentDescription="password_1_ek1"
+            android:src="@drawable/password_1" />
+
+        <View
+            android:id="@+id/rectangle_3_ek2"
+            android:layout_width="290dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="305dp"
+            android:background="@drawable/rectangle_3" />
+
+        <EditText
+            android:id="@+id/editNama"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="307dp"
+            android:layout_toRightOf="@id/username_1_ek1"
+            android:hint="nama lengkap"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <View
+            android:id="@+id/rectangle_9"
+            android:layout_width="290dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="358dp"
+            android:background="@drawable/rectangle_3" />
+
+        <EditText
+            android:id="@+id/editUname"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="360dp"
+            android:layout_toRightOf="@id/alamat_1"
+            android:hint="username"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <View
+            android:id="@+id/rectangle_11"
+            android:layout_width="290dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rectangle_3"
+            android:layout_marginTop="517dp"/>
+
+        <EditText
+            android:id="@+id/editTelp"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="517dp"
+            android:layout_toRightOf="@id/alamat_1"
+            android:hint="nomor HP"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/username_1_ek1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="315dp"
+            android:src="@drawable/username_1" />
+
+        <View
+            android:id="@+id/rectangle_10"
+            android:layout_width="290dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="411dp"
+            android:background="@drawable/rectangle_3" />
+
+        <EditText
+            android:id="@+id/editPass"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="412dp"
+            android:layout_toRightOf="@id/password_1_ek1"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/username_2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="423dp"
+            android:contentDescription="username_2"
+            android:src="@drawable/password_1" />
+
+
+        <TextView
+            android:id="@+id/daftar_ek2"
+            android:layout_width="wrap_content"
+            android:layout_height="32.5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_marginTop="245dp"
+            android:gravity="center"
+            android:text="Futsal Rent Daftar"
+            android:textColor="@color/c4"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/logo1_2_ek2"
+            android:layout_width="65dp"
+            android:layout_height="87dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:contentDescription="logo1_2_ek2"
+            android:src="@drawable/logo1" />
+
+        <ImageView
+            android:id="@+id/alamat_1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="370dp"
+            android:contentDescription="alamat_1"
+            android:src="@drawable/username_1" />
+
+        <ImageView
+            android:id="@+id/phone_1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="529dp"
+            android:contentDescription="phone_1"
+            android:src="@drawable/phone_1" />
+
+
+        <Button
+            android:id="@+id/btnDaftar"
+            android:layout_width="89dp"
+            android:layout_height="23dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="598dp"
+            android:background="@drawable/button_styles"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:text="Daftar"
+            android:textColor="@color/white"
+            android:textSize="9sp" />
+
+        <TextView
+            android:layout_width="147dp"
+            android:layout_height="25.5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="645dp"
+            android:gravity="center"
+            android:text="atau"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="89dp"
+            android:layout_height="23dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="670dp"
+            android:background="@drawable/button_styles"
+            android:gravity="center"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:text="Login"
+            android:textColor="@color/c4"
+            android:textSize="9sp"
+            android:theme="@style/buttonstyle1" />
+
+    </RelativeLayout>
+
+</ScrollView>

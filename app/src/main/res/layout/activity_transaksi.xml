@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/c1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TransaksiActivity">
+
+    <ImageView
+        android:id="@+id/panah2_1_ek2"
+        android:layout_width="21dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="23dp"
+        android:contentDescription="panah2_1_ek2"
+        android:src="@drawable/panah2_1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/c3" />
+
+    <TextView
+        android:id="@+id/transaksi_ek4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="Transaksi"
+        android:textColor="@color/c1"
+        android:textStyle="bold"
+        android:textSize="25sp" />
+
+    <View
+        android:id="@+id/rectangle_16_ek2"
+        android:layout_width="303dp"
+        android:layout_height="508dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="122dp"
+        android:background="@drawable/rectangle" />
+
+    <EditText
+        android:id="@+id/editPenyewa"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nama"
+        android:layout_marginLeft="60dp"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/editNohp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nohp"
+        android:layout_marginLeft="60dp"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/nohp"
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="270dp"
+        android:text="No HP              :"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="215dp"
+        android:gravity="center"
+        android:text="Nama Penyewa :"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/gedung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="156dp"
+        android:text="Nama Gedung"
+        android:textColor="@color/c4"
+        android:textStyle="bold"
+        android:textSize="17sp" />
+
+
+    <Button
+        android:id="@+id/btnPesan"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="550dp"
+        android:background="@drawable/button_styles"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:textColor="@color/white"
+        android:text="Pesan Sekarang"
+        android:textSize="10sp" />
+
+
+
+
+</RelativeLayout>

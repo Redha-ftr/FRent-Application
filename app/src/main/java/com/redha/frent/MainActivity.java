@@ -66,6 +66,15 @@ public class MainActivity extends AppCompatActivity{
         recyclerView.setAdapter(adapter);
 
         showData();
+
+        /*recyclerView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,RincianGedungActivity.class);
+                startActivity(intent);
+            }
+        });*/
+
     }
 
     private void moveToLogin() {
@@ -74,16 +83,6 @@ public class MainActivity extends AppCompatActivity{
         startActivity(iLogin);
         finish();
     }
-
- /*   @Override
-    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-        //TextView getId = (TextView) view.findViewById(R.id.txtId);
-        //final int id = Integer.parseInt(getId.getText().toString());
-
-        Intent intent = new Intent(MainActivity.this, RincianGedungActivity.class);
-        //intent.putExtra(row_id, id);
-        startActivity(intent);
-    }*/
 
     private void showData() {
         serverAPI.getSelectAPI().callGedungList().enqueue(new Callback<List<GedungModel>>() {

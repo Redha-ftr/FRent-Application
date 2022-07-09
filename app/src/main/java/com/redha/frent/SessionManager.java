@@ -17,6 +17,7 @@ public class SessionManager {
     public static final String ID = "id";
     public static final String USERNAME = "username";
     public static final String NAMA = "nama";
+    public static final String NOTELP = "notelp";
 
     public SessionManager (Context context){
         this._context = context;
@@ -29,6 +30,7 @@ public class SessionManager {
         editor.putString(ID, user.getId());
         editor.putString(USERNAME, user.getUsername());
         editor.putString(NAMA, user.getNama());
+        editor.putString(NOTELP, user.getNo_telp());
         editor.commit();
     }
 
@@ -37,6 +39,7 @@ public class SessionManager {
         user.put(ID, sharedPreferences.getString(ID,null));
         user.put(USERNAME, sharedPreferences.getString(USERNAME,null));
         user.put(NAMA, sharedPreferences.getString(NAMA,null));
+        user.put(NOTELP, sharedPreferences.getString(NOTELP,null));
         return user;
     }
 

@@ -1,17 +1,23 @@
 package adapter;
 
 import android.content.Context;
+import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.redha.frent.MainActivity;
 import com.redha.frent.R;
+import com.redha.frent.RincianGedungActivity;
 
 import java.util.List;
 
@@ -42,6 +48,23 @@ public class GedungAdapter extends RecyclerView.Adapter<UserViewHolder>{
         holder.alamat.setText(gedungModel.getAlamat());
         holder.harga.setText("Rp"+gedungModel.getHarga());
         Glide.with(context).load(gedungModel.getGambar()).into(holder.image);
+
+        // Set onclicklistener pada view namagedung (TextView)
+        holder.ll.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, RincianGedungActivity.class);
+                intent.putExtra("gambar",gedungModel.getGambar());
+                intent.putExtra("namagedung",gedungModel.getNama());
+                intent.putExtra("alamat",gedungModel.getAlamat());
+                intent.putExtra("notelp",gedungModel.getNotelp());
+                intent.putExtra("keterangan",gedungModel.getKeterangan());
+                intent.putExtra("harga",gedungModel.getHarga());
+                context.startActivity(intent);
+
+            }
+        });
+
     }
 
     @Override
@@ -49,11 +72,15 @@ public class GedungAdapter extends RecyclerView.Adapter<UserViewHolder>{
         return gedungModels.size();
     }
 
+
+
 }
 
 class UserViewHolder extends RecyclerView.ViewHolder {
     TextView id, namaGedung, alamat, harga;
     ImageView image;
+    CardView cardView;
+    LinearLayout ll;
 
     public UserViewHolder(@NonNull View itemView) {
         super(itemView);
@@ -62,5 +89,7 @@ class UserViewHolder extends RecyclerView.ViewHolder {
         alamat = itemView.findViewById(R.id.txtAlamat);
         harga = itemView.findViewById(R.id.txtHarga);
         image = itemView.findViewById(R.id.image);
+        cardView = itemView.findViewById(R.id.cardview);
+        ll = itemView.findViewById(R.id.linearlayout);
     }
 }

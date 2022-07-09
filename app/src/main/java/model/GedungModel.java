@@ -21,19 +21,15 @@ public class GedungModel {
     @SerializedName("gambar")
     private String gambar;
 
-    @SerializedName("jadwal")
-    private String jadwal;
-
-    @SerializedName("notelp")
+    @SerializedName("no_telp")
     private String notelp;
 
-    public GedungModel(String nama, String alamat, String harga, String keterangan, String gambar, String jadwal, String notelp) {
+    public GedungModel(String nama, String alamat, String harga, String keterangan, String gambar, String notelp) {
         this.nama = nama;
         this.alamat = alamat;
         this.harga = harga;
         this.keterangan = keterangan;
         this.gambar =gambar;
-        this.jadwal =jadwal;
         this.notelp =notelp;
     }
 
@@ -83,14 +79,6 @@ public class GedungModel {
 
     public void setGambar(String gambar) {
         this.gambar = gambar;
-    }
-
-    public String getJadwal() {
-        return jadwal;
-    }
-
-    public void setJadwal(String jadwal) {
-        this.jadwal = jadwal;
     }
 
     public String getNotelp() {

@@ -2,9 +2,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/c1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/c1"
     tools:context=".TransaksiActivity">
 
     <ImageView
@@ -31,66 +31,244 @@
         android:layout_marginTop="19dp"
         android:text="Transaksi"
         android:textColor="@color/c1"
-        android:textStyle="bold"
-        android:textSize="25sp" />
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
     <View
-        android:id="@+id/rectangle_16_ek2"
+        android:id="@+id/rectangle_2_ek1"
         android:layout_width="303dp"
-        android:layout_height="508dp"
+        android:layout_height="414dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="122dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="150dp"
         android:background="@drawable/rectangle" />
 
-    <EditText
-        android:id="@+id/editPenyewa"
-        android:layout_width="200dp"
+    <TableLayout
+        android:layout_width="270dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/nama"
-        android:layout_marginLeft="60dp"
-        android:textColor="@color/black"
-        android:textSize="13sp" />
+        android:layout_below="@id/txtdetail"
+        android:layout_marginLeft="70dp">
 
-    <EditText
-        android:id="@+id/editNohp"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/nohp"
-        android:layout_marginLeft="60dp"
-        android:textColor="@color/black"
-        android:textSize="13sp" />
+        <TableRow>
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Nama Penyewa"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtnama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="nama "
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Nomor WA"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="no"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Nama Gedung"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtnamagedung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="nama gedung"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Tanggal Sewa"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtTanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="tangggal"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Jam"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtJam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="jam"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Durasi"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtDurasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="durasi"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Total Harga"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtTotHarga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="nama gedung"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </TableRow>
+    </TableLayout>
 
     <TextView
-        android:id="@+id/nohp"
-        android:layout_width="89dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="270dp"
-        android:text="No HP              :"
-        android:textColor="@color/black"
-        android:textSize="13sp" />
-
-    <TextView
-        android:id="@+id/nama"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="215dp"
-        android:gravity="center"
-        android:text="Nama Penyewa :"
-        android:textColor="@color/black"
-        android:textSize="13sp" />
-
-    <TextView
-        android:id="@+id/gedung"
+        android:id="@+id/txtdetail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="156dp"
-        android:text="Nama Gedung"
+        android:layout_marginTop="176dp"
+        android:text="Detil Pemesanan"
         android:textColor="@color/c4"
-        android:textStyle="bold"
-        android:textSize="17sp" />
+        android:textSize="17sp"
+        android:textStyle="bold" />
 
 
     <Button
@@ -98,16 +276,14 @@
         android:layout_width="wrap_content"
         android:layout_height="35dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="550dp"
+        android:layout_marginTop="480dp"
         android:background="@drawable/button_styles"
         android:gravity="center"
         android:paddingTop="0dp"
         android:paddingBottom="0dp"
+        android:text="Konfirmasi Pesanan"
         android:textColor="@color/white"
-        android:text="Pesan Sekarang"
-        android:textSize="10sp" />
-
-
+        android:textSize="13sp" />
 
 
 </RelativeLayout>

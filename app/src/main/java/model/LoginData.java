@@ -13,6 +13,9 @@ public class LoginData{
 	@SerializedName("username")
 	private String username;
 
+	@SerializedName("no_telp")
+	private String no_telp;
+
 	public void setNama(String nama){
 		this.nama = nama;
 	}
@@ -35,5 +38,13 @@ public class LoginData{
 
 	public String getUsername(){
 		return username;
+	}
+
+	public String getNo_telp() {
+		return no_telp;
+	}
+
+	public void setNo_telp(String no_telp) {
+		this.no_telp = no_telp;
 	}
 }

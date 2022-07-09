@@ -4,7 +4,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class serverAPI {
-    private static final String baseURL = "https://kfrent.000webhostapp.com/";
+    private static final String baseURL = "http://kfrent.atwebpages.com/";
     private static Retrofit retrofit = null;
 
     public static InterfaceAPI getSelectAPI() {

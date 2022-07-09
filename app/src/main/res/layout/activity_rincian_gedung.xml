@@ -10,13 +10,14 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    <ImageView
-        android:id="@+id/gambar"
-        android:layout_width="match_parent"
-        android:layout_height="183dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/lapangan" />
+
+        <ImageView
+            android:id="@+id/gambar"
+            android:layout_width="match_parent"
+            android:layout_height="183dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/lapangan" />
 
         <TextView
             android:id="@+id/nama_gedung"
@@ -34,7 +35,7 @@
 
 
         <TextView
-            android:id="@+id/jalan"
+            android:id="@+id/alamat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -57,7 +58,7 @@
             android:text="085209876123"
             android:textSize="13sp" />
 
-    <!-- Rectangle 17 -->
+        <!-- Rectangle 17 -->
         <View
             android:id="@+id/rectangle_1"
             android:layout_width="347dp"
@@ -67,34 +68,33 @@
             android:layout_marginTop="295dp"
             android:background="@drawable/rectangle" />
 
-    <!-- Lapangan futsal yang ada di daerah Kota Padang, tempat strategis, nyaman, pengcahayaan cukup, terdapat kantin, musholla dan parkir -->
+        <!-- Lapangan futsal yang ada di daerah Kota Padang, tempat strategis, nyaman, pengcahayaan cukup, terdapat kantin, musholla dan parkir -->
         <TextView
             android:id="@+id/ket"
-            android:layout_width="wrap_content"
+            android:layout_width="310dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="310dp"
-            android:gravity="center_horizontal|top"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="300dp"
+            android:gravity="center_horizontal"
             android:padding="15dp"
             android:text="Lapangan futsal yang ada di daerah Kota Padang, tempat strategis, nyaman, pengcahayaan cukup, terdapat kantin, musholla dan parkir"
             android:textSize="13sp" />
 
 
-    <!-- Jadwal dan Harga -->
+        <!-- Jadwal dan Harga -->
         <TextView
             android:id="@+id/jadwal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="410dp"
+            android:layout_marginTop="420dp"
             android:gravity="center_horizontal|top"
             android:text="Jadwal dan Harga"
             android:textSize="13sp" />
 
-    <!-- Line 8 -->
+        <!-- Line 8 -->
         <View
             android:id="@+id/line_8"
             android:layout_width="315dp"
@@ -105,86 +105,122 @@
             android:background="@drawable/line" />
 
 
-    <!-- Rectangle 20 -->
+        <!-- Rectangle 20 -->
         <View
             android:layout_width="315dp"
-            android:layout_height="220dp"
+            android:layout_height="200dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="435dp"
+            android:layout_marginTop="455dp"
             android:background="@drawable/rectangle_2" />
 
-    <!-- Senin-Kamis -->
-        <TextView
-            android:id="@+id/hari1"
-            android:layout_width="305dp"
+        <TableLayout
+            android:id="@+id/tl1"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="450dp"
-            android:gravity="top"
-            android:text="Senin-Jumat"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="450dp">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/tanggal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="35dp"
+                    android:text="Tanggal"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/datedeparture"
+                    android:layout_width="185dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="35dp"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/ic_date_range"
+                    android:drawableRight="@drawable/ic_date_range"
+                    android:focusable="true"
+                    android:hint="pilih tanggal"
+                    android:padding="5dp"
+                    android:textSize="13dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/jam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Jam  "
+                    android:textSize="13sp" />
+
+                <Spinner
+                    android:id="@+id/spjam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:autofillHints="pilih jam" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/durasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Durasi  "
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/editdurasi"
+                    android:layout_width="169dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:hint="durasi perjam"
+                    android:padding="5dp"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="/jam"
+                    android:textSize="13sp" />
+
+            </TableRow>
+
+
+        </TableLayout>
+
+        <TextView
+            android:layout_toLeftOf="@id/harga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tl1"
+            android:layout_marginTop="15dp"
+            android:text="Harga : "
+            android:textColor="@color/black"
             android:textSize="15sp" />
 
-
-    <!-- Sabtu-Minggu -->
         <TextView
-            android:id="@+id/hari2"
-            android:layout_width="305dp"
+            android:id="@+id/harga"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="570dp"
-            android:gravity="top"
-            android:text="Sabtu - Minggu"
+            android:layout_below="@id/tl1"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="15dp"
+            android:text="75000"
+            android:textColor="@color/red"
             android:textSize="15sp" />
-
-    <!-- Jam 08.00 - 16.00 : Rp.80.000/jam -->
-        <TextView
-            android:id="@+id/j1"
-            android:layout_width="305dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="475dp"
-            android:gravity="top"
-            android:text="Jam : 08.00 - 12.00                   Rp80.000"
-            android:textSize="13sp" />
-
-    <!-- Jam 08.00 - 16.00 : Rp.80.000/jam -->
-        <TextView
-            android:id="@+id/j2"
-            android:layout_width="305dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="505dp"
-            android:gravity="top"
-            android:text="Jam : 13.00 - 18.00                   Rp90.000"
-            android:textSize="13sp" />
-
-    <!-- Jam 08.00 - 16.00 : Rp.80.000/jam -->
-        <TextView
-            android:id="@+id/j3"
-            android:layout_width="305dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="530dp"
-            android:gravity="top"
-            android:text="Jam : 19.00 - 23.00                   Rp100.000"
-            android:textSize="13sp" />
-
-        <TextView
-            android:id="@+id/j4"
-            android:layout_width="305dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="600dp"
-            android:gravity="top"
-            android:text="Jam : 08.00 - 09.00                   Rp100.000"
-            android:textSize="13sp" />
 
         <Button
             android:id="@+id/btnPesan"

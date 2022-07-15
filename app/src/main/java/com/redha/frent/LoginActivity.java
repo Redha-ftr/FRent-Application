@@ -44,6 +44,12 @@ SessionManager sessionManager;
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btnLogin:
+                if(editUname.getText().toString().length()==0) {
+                    editUname.setError("Masukkan uername!");
+                }else if(editPass.getText().toString().length()==0) {
+                    editPass.setError("Masukkan password!");
+                }
+
                 Username = editUname.getText().toString();
                 Password = editPass.getText().toString();
                 login(Username,Password);

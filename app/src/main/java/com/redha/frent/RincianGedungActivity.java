@@ -98,22 +98,29 @@ Button btnPesan;
             }
         });
 
-
         btnPesan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int harga = Integer.parseInt(txtHarga.getText().toString());
-                int totharga = Integer.parseInt(durasi.getText().toString()) * harga;
+                if(datedeparture.getText().toString().length()==0) {
+                    datedeparture.setError("Pilih tanggal sewa!");
+                }else if(durasi.getText().toString().length()==0) {
+                    durasi.setError("Masukkan durasi!");
+                }else{
 
-                Intent intent = new Intent(RincianGedungActivity.this, TransaksiActivity.class);
-                intent.putExtra("namagedung",txtnamagedung.getText().toString());
-                intent.putExtra("nama",sessionManager.getUserDetail().get(SessionManager.NAMA));
-                intent.putExtra("notelp",sessionManager.getUserDetail().get(SessionManager.NOTELP));
-                intent.putExtra("tanggal",datedeparture.getText().toString());
-                intent.putExtra("jam",spJam.getSelectedItem().toString());
-                intent.putExtra("durasi", durasi.getText().toString());
-                intent.putExtra("totharga",totharga);
-                startActivity(intent);
+                    int harga = Integer.parseInt(txtHarga.getText().toString());
+                    int totharga = Integer.parseInt(durasi.getText().toString()) * harga;
+
+                    Intent intent = new Intent(RincianGedungActivity.this, TransaksiActivity.class);
+                    intent.putExtra("namagedung",txtnamagedung.getText().toString());
+                    intent.putExtra("nama",sessionManager.getUserDetail().get(SessionManager.NAMA));
+                    intent.putExtra("notelp",sessionManager.getUserDetail().get(SessionManager.NOTELP));
+                    intent.putExtra("tanggal",datedeparture.getText().toString());
+                    intent.putExtra("jam",spJam.getSelectedItem().toString());
+                    intent.putExtra("durasi", durasi.getText().toString());
+                    intent.putExtra("totharga",totharga);
+                    startActivity(intent);
+                }
+
             }
         });
 
@@ -126,7 +133,7 @@ Button btnPesan;
                 getIntent().hasExtra("alamat")&&
                 getIntent().hasExtra("notelp")&&
                 getIntent().hasExtra("keterangan")&&
-                getIntent().hasExtra("harga")){
+                getIntent().hasExtra("harga")) {
 
             String gambar = idata.getExtras().getString("gambar");
             String namagedung = idata.getExtras().getString("namagedung");

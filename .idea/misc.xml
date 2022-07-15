@@ -4,10 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/EED/AndroidStudioProjects/FRent/app/src/main/res/drawable/button_styles.xml" value="0.18854166666666666" />
-        <entry key="..\:/Users/EED/AndroidStudioProjects/FRent/app/src/main/res/layout/activity_login.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/EED/AndroidStudioProjects/FRent/app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="..\:/Users/EED/AndroidStudioProjects/FRent/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/EED/AndroidStudioProjects/FRent/app/src/main/res/layout/activity_register.xml" value="0.22" />
-        <entry key="..\:/Users/EED/AndroidStudioProjects/FRent/app/src/main/res/layout/activity_rincian_gedung.xml" value="0.22" />
+        <entry key="..\:/Users/EED/AndroidStudioProjects/FRent/app/src/main/res/layout/activity_rincian_gedung.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/EED/AndroidStudioProjects/FRent/app/src/main/res/layout/activity_splash_screen.xml" value="0.17239583333333333" />
         <entry key="..\:/Users/EED/AndroidStudioProjects/FRent/app/src/main/res/layout/activity_transaksi.xml" value="0.22" />
         <entry key="..\:/Users/EED/AndroidStudioProjects/FRent/app/src/main/res/layout/cardview_gedung.xml" value="0.22" />

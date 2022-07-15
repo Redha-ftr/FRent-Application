@@ -17,9 +17,9 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
-EditText editUname, editPass, editTelp, editNama;
+EditText editUname, editPass, editTelp, editNama, editCPass;
 Button btnDaftar, btnLogin;
-    String Username, Password, Nama, Telepon;
+    String Username, Password, Nama, Telepon, CPass;
     InterfaceAPI apiInterface;
 
     @Override
@@ -32,6 +32,7 @@ Button btnDaftar, btnLogin;
         editNama = (EditText) findViewById(R.id.editNama);
         btnDaftar = (Button) findViewById(R.id.btnDaftar);
         btnLogin = (Button) findViewById(R.id.btnLogin);
+        editCPass = (EditText) findViewById(R.id.editCPass);
 
         btnDaftar.setOnClickListener(this);
         btnLogin.setOnClickListener(this);
@@ -46,6 +47,23 @@ Button btnDaftar, btnLogin;
                 Password = editPass.getText().toString();
                 Nama = editNama.getText().toString();
                 Telepon = editTelp.getText().toString();
+                CPass = editCPass.getText().toString();
+
+                if(Username.length()==0) {
+                    editNama.setError("Masukkan nama pengguna!");
+                }else if(Password.length()==0) {
+                    editUname.setError("Masukkan username!");
+                }else if(Nama.length()==0) {
+                    editPass.setError("Masukkan password!");
+                }else if(Telepon.length()==0) {
+                    editPass.setError("Masukkan password!");
+                }else if(Password.length() < 5){
+                    editPass.setError("Password minimal terdiri dari 6 karakter");
+                    return;
+                }else if (!CPass.equals(Password)) {
+                    editCPass.setError("Password tidak sesuai");
+                    return;
+                }
                 register(Username, Password, Nama, Telepon);
                 break;
             case R.id.btnLogin:

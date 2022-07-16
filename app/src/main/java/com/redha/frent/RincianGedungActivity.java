@@ -1,6 +1,7 @@
 package com.redha.frent;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
@@ -51,6 +52,7 @@ Button btnPesan;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rincian_gedung);
+        //AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
         datedeparture = findViewById(R.id.datedeparture);
         btnPesan = (Button) findViewById(R.id.btnPesan);
@@ -119,6 +121,7 @@ Button btnPesan;
                     intent.putExtra("durasi", durasi.getText().toString());
                     intent.putExtra("totharga",totharga);
                     startActivity(intent);
+                    finish();
                 }
 
             }

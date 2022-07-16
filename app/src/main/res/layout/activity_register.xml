@@ -54,6 +54,7 @@
             android:layout_marginTop="464dp"
             android:layout_toRightOf="@id/alamat_1"
             android:hint="konfirmasi password"
+            style="@style/BlackText"
             android:inputType="textPassword"
             android:textSize="13sp" />
 
@@ -81,6 +82,7 @@
             android:layout_marginTop="307dp"
             android:layout_toRightOf="@id/username_1_ek1"
             android:hint="nama lengkap"
+            style="@style/BlackText"
             android:textSize="13sp" />
 
         <View
@@ -98,6 +100,7 @@
             android:layout_marginTop="360dp"
             android:layout_toRightOf="@id/alamat_1"
             android:hint="username"
+            style="@style/BlackText"
             android:textSize="13sp" />
 
         <View
@@ -115,6 +118,7 @@
             android:layout_marginTop="517dp"
             android:layout_toRightOf="@id/alamat_1"
             android:hint="nomor WA"
+            style="@style/BlackText"
             android:textSize="13sp" />
 
         <ImageView
@@ -140,6 +144,7 @@
             android:layout_marginTop="412dp"
             android:layout_toRightOf="@id/password_1_ek1"
             android:hint="password"
+            style="@style/BlackText"
             android:inputType="textPassword"
             android:textSize="13sp" />
 

@@ -1,6 +1,7 @@
 package com.redha.frent;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -26,6 +27,8 @@ Button btnDaftar, btnLogin;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+        //AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+
         editUname = (EditText) findViewById(R.id.editUname);
         editPass = (EditText) findViewById(R.id.editPass);
         editTelp = (EditText) findViewById(R.id.editTelp);

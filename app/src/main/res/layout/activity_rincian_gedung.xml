@@ -149,6 +149,7 @@
                     android:focusable="true"
                     android:hint="pilih tanggal"
                     android:padding="5dp"
+                    style="@style/BlackText"
                     android:textSize="13dp" />
             </TableRow>
 
@@ -169,6 +170,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
+                    style="@style/BlackText"
                     android:layout_marginTop="20dp"
                     android:autofillHints="pilih jam" />
             </TableRow>
@@ -193,6 +195,7 @@
                     android:layout_marginTop="15dp"
                     android:hint="durasi perjam"
                     android:padding="5dp"
+                    style="@style/BlackText"
                     android:textSize="13dp" />
 
                 <TextView

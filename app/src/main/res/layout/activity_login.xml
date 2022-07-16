@@ -89,6 +89,7 @@
         android:layout_marginTop="340dp"
         android:layout_toRightOf="@id/username_1"
         android:hint="username"
+        style="@style/BlackText"
         android:textSize="13sp" />
 
     <Button
@@ -113,8 +114,9 @@
         android:layout_marginTop="384dp"
         android:layout_toRightOf="@id/password_1"
         android:hint="password"
-        android:textColor="@color/black"
+        style="@style/BlackText"
         android:inputType="textPassword"
+        android:textColor="@color/black"
         android:textSize="13sp" />
 
     <ImageView
